@@ -1,0 +1,9 @@
+---
+- name: testing
+  hosts: all
+  tasks:
+    - name: service restart
+      service:
+	name: sshd
+	state: restarted
+...
